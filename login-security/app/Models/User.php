@@ -46,3 +46,6 @@ class User extends Authenticatable
         ];
     }
 }
+
+?>
+<a href="../../resources/views/login.html">Teste</a>
