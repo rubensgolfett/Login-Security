@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="styles/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +20,7 @@
                 <form action="<?= $_SERVER['PHP_SELF']?>" method="post" autocomplete="on">
                     <div class="camp">
 
-                        <label for="ilogin"><span class="material-icons">person</span></label>
+                        <label for="ilogin"><span class="material-icons">account_circle</span></label>
                         <input type="email" name="email" id="ilogin" placeholder="Enter your E-mail" required autocomplete="email" maxlength="50" class="btn">
                         
                     </div>
@@ -33,8 +32,8 @@
                     </div>
                     <input type="submit" value="Login">
                     <a href="#" class="botton">forgot password</a>
-
                 </a>
+                <p>Don't have an account yet? <a href="register.php" id="min-bottom">Sign up here!</a></p>
                 </form>
             </div>
         </section>
