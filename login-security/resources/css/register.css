@@ -42,7 +42,7 @@ section#login {
 
 div#image {
     display: block;
-    background: var(--color-purple) url(../img/city-purple.jpg) no-repeat;
+    background: var(--color-purple) url(../img/build.jpg);
     background-size: cover;
     background-position: left bottom;
     height: 200px;

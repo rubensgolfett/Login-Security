@@ -20,6 +20,7 @@
     
                     <div class="camp">
                         <label for="iusername"><span class="material-icons">person</span></label>
+
                         <input type="text" name="username" id="iusername" placeholder="Create your UserName" required autocomplete="name" maxlength="100" class="btn">
                     </div>
 
