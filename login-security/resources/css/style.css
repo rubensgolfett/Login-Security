@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+:root {
+    --color-black: #15142b;
+    --color-purple: #372991;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    max-width: 600px;
+    margin: auto;
+    background-color: #514696;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    width: 100%;
+    color: aliceblue;
+    background-color: var(--color-purple);
+}
+
+.text {
+    display: flex;
+    flex-direction: column; /* Empilha h1 e p em coluna */
+    margin: 5px;
+    color: white;
+}
+
+#logo {
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    background-color: var(--color-purple);
+    text-align: start;
+}
+
+nav > a, #using > a {
+    margin: 7px;
+    color: aliceblue;
+    text-decoration: none;
+    padding-bottom: 7px;
+}
+
+nav > a:hover, #using > a:hover {
+    text-decoration: underline;
+    padding-left: 8px;
+    transition: padding-left 0.5s;
+}
+
+#no-a {
+    cursor: auto;
+    text-decoration: none;
+    padding: 0px;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+iframe {
+    display: block;
+    width: 240px;
+    padding-top: 10px;
+    height: 300px;
+    margin: auto;
+}
+
+section {
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+#using > a {
+    color: #261694d0;
+    font-weight: 900;
+}
+
+h2 {
+    color: #2f2763;
+}
+
+footer {
+    color: aliceblue;
+    padding: 4px 0px 4px 6px;
+    background-color: var(--color-purple);
+}
+
+footer a {
+    color: aliceblue;
+}
+
+footer a:hover {
+    padding: 4px;
+    text-shadow: 1px 1px 3px black;
+    transition: padding 0.4s;
+}

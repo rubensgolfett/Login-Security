@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/login-register.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -17,23 +17,24 @@
                 <h1>Login</h1>
                 <p>Welcom again. Acess your account here down!</p>
 
-                <form action="" method="post" autocomplete="on">
+                <form action="../../app/Models/loginUsers.php" method="post" autocomplete="on">
                     <div class="camp">
 
                         <label for="ilogin"><span class="material-icons">account_circle</span></label>
-                        <input type="email" name="email" id="ilogin" placeholder="Enter your E-mail" required autocomplete="email" maxlength="50" class="btn">
+                        <input type="email" name="email" id="ilogin" placeholder="Enter your E-mail" required autocomplete="email" maxlength="100" class="btn"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         
                     </div>
 
                     <div class="camp">
 
                         <label for="ipassword"><span class="material-icons">vpn_key</span></label>
-                        <input type="password" name="password" id="ipassword" placeholder="Enter your Password" required autocomplete="current-password" minlength="4" maxlength="20" class="btn">
+                        <input type="password" name="password" id="ipassword" placeholder="Enter your Password" required autocomplete="current-password" minlength="8" maxlength="20" class="btn">
                     </div>
                     <input type="submit" value="Login">
                     <a href="#" class="botton">forgot password</a>
-                </a>
-                <p>Don't have an account yet? <a href="register.php" id="min-bottom">Sign up here!</a></p>
+                
+                <p id="min-bottom">Don't have an account yet?<a href="register.html"> Sign up here!</a></p>
+
                 </form>
             </div>
         </section>

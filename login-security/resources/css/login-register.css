@@ -23,10 +23,11 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    
 }
 
 section#login {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 250px;
     height: 470px;
     border-radius: 20px;
@@ -42,7 +43,7 @@ section#login {
 
 div#image {
     display: block;
-    background: var(--color-purple) url(../img/build.jpg);
+    background: var(--color-purple) url(../img/build.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
@@ -97,6 +98,7 @@ input[type=submit]:hover {
     background-color: #3d8582;
 }
 
+
 a.botton {
     display: block;
     margin: 0 auto;
@@ -110,6 +112,23 @@ a.botton {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+}
+
+#min-bottom {
+    display: block;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.253);
+    margin-bottom: 10px;
+    
+}
+
+#min-bottom > a{
+    text-decoration: none;
+    margin-top: 4px;
+    color: #191155;
+}
+
+#min-bottom > a:hover {
+    text-decoration: underline;
 }
 
 /* Midia for Tablet, Desktop and Big Screens */
