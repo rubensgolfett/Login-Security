@@ -13,7 +13,7 @@
 
 body, html {
     scroll-behavior: smooth;
-    max-width: 600px;
+    
     margin: auto;
     background-color: #514696;
 }
@@ -66,6 +66,7 @@ nav > a:hover, #using > a:hover {
 }
 
 main {
+    max-width: 600px;
     background-color: aliceblue;
 }
 
@@ -92,12 +93,15 @@ h2 {
 }
 
 footer {
+    display: block;
+    text-align: center;
     color: aliceblue;
     padding: 4px 0px 4px 6px;
     background-color: var(--color-purple);
 }
 
 footer a {
+    
     color: aliceblue;
 }
 

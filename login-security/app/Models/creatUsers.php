@@ -11,6 +11,7 @@
     // Path to the JSON file
     $path = "../../storage/app/private/users.json";
         // Function to validate username, email, and password
+
     function validateData($username, $email, $password) {
 
         // Validate username
@@ -97,6 +98,7 @@
     <ul>
         <li class='parament'> Username =>". $finaldata["username"] ."
         <li class='parament'> Email =>". $finaldata["email"] ."
+        <li class='parament'> Password => ". $password ."
     </ul>
     }";
 ?>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Redefinir Senha</title>
+    <link rel="shortcut icon" href="../img/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="reset">
+        <h2>Reset Password</h2>
+        <form action="../../app/Models/resetPassword.php" method="post" autocomplete="on">
+            <label for="email"><span class="material-icons">person</span></label>
+            <div class="camp">
+            <input type="email" name="email" id="ilogin" placeholder="Enter your E-mail" required autocomplete="email" maxlength="100" class="btn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <button type="submit">Verify</button>
+        </div>
+        </form>
+    </section>
+    </main>
+</body>
+</html>
+
