@@ -5,103 +5,132 @@
     --color-purple: #372991;
 }
 
+/* Reset básico */
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Centraliza todo o layout (exceto nav) */
 body, html {
     scroll-behavior: smooth;
-    
-    margin: auto;
     background-color: #514696;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Header com logo e título */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     font-size: 1.2em;
     width: 100%;
     color: aliceblue;
     background-color: var(--color-purple);
+    padding: 10px 0;
 }
 
 .text {
     display: flex;
-    flex-direction: column; /* Empilha h1 e p em coluna */
+    flex-direction: column;
     margin: 5px;
     color: white;
 }
 
+/* Logo */
 #logo {
-    margin: 0px;
     width: 50px;
     height: 50px;
 }
 
+/* Navegação deitada */
 nav {
     background-color: var(--color-purple);
-    text-align: start;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
-nav > a, #using > a {
-    margin: 7px;
+nav > a,
+#using > a {
+    display: inline-block;
+    margin: 0 10px;
     color: aliceblue;
     text-decoration: none;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
 }
 
-nav > a:hover, #using > a:hover {
+nav > a:hover,
+#using > a:hover {
     text-decoration: underline;
     padding-left: 8px;
     transition: padding-left 0.5s;
 }
 
+/* Link fixo no topo */
 #no-a {
     cursor: auto;
     text-decoration: none;
-    padding: 0px;
+    padding: 0;
 }
 
+/* Main centralizado */
 main {
     max-width: 600px;
+    width: 100%;
     background-color: aliceblue;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+/* iframe centralizado */
 iframe {
     display: block;
-    width: 240px;
-    padding-top: 10px;
+    width: 100%;
+    max-width: 240px;
     height: 300px;
-    margin: auto;
+    margin: 10px auto 0 auto;
+    border-radius: 8px;
 }
 
+/* Seções com espaçamento */
 section {
     padding: 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 0 10px;
 }
 
+/* Links na seção "using" */
 #using > a {
     color: #261694d0;
     font-weight: 900;
+    display: inline-block;
+    margin: 5px 10px 0 0;
 }
 
+/* Títulos */
 h2 {
     color: #2f2763;
+    margin-bottom: 10px;
 }
 
+/* Rodapé */
 footer {
     display: block;
     text-align: center;
     color: aliceblue;
-    padding: 4px 0px 4px 6px;
+    padding: 10px;
     background-color: var(--color-purple);
+    width: 100%;
 }
 
 footer a {
-    
     color: aliceblue;
 }
 

@@ -17,23 +17,23 @@
                 <h1>Registrer</h1>
                 <p>Hello, are you new here? Sign up now below!</p>
 
-                <form action="../../app/Models/creatUsers.php" method="post" autocomplete="on">
+                <form action="../../app/Models/creatUsers.php" method="post" autocomplete="off">
     
                     <div class="camp">
                         <label for="iusername"><span class="material-icons">person</span></label>
 
-                        <input type="text" name="username" id="iusername" placeholder="Your first Name" required autocomplete="name" maxlength="75" minlength="4" class="btn" pattern="^[A-Za-z]{3,50}$">
+                        <input type="text" name="username" id="iusername" placeholder="Your first Name" required maxlength="75" minlength="4" class="btn" pattern="^[A-Za-z]{3,50}$">
                     </div>
 
                     <div class="camp">
                         <label for="ilogin"><span class="material-icons">account_circle</span></label>
-                        <input type="email" name="create-email" id="ilogin" placeholder="Enter your E-mail" required autocomplete="email" maxlength="100" class="btn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        <input type="email" name="create-email" id="ilogin" placeholder="Enter your E-mail" required maxlength="100" class="btn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
 >
                     </div>
 
                     <div class="camp">
                         <label for="ipassword"><span class="material-icons">vpn_key</span></label>
-                        <input type="password" name="create-password" id="ipassword" placeholder="Create your Password" required autocomplete="current-password" minlength="8" maxlength="20" class="btn">
+                        <input type="password" name="create-password" id="ipassword" placeholder="Create your Password" required minlength="8" maxlength="20" class="btn">
                     </div>
 
                     <input type="submit" value="Register">

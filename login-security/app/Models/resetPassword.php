@@ -115,7 +115,7 @@ foreach ($users as $user) {
     <main>
         <?php if ($found): ?>
             <h2>Enter New Password</h2>
-            <form action="updatePassword.php" method="post">
+            <form action="updatePassword.php" method="post" autocomplete="off">
                 <label for="ipassword"><span class="material-icons">vpn_key</span></label>
                 <input type="hidden" name="email" value="<?= htmlspecialchars($email) ?>">
                 <input type="password" name="new_password" id="ipassword" placeholder="New password" required minlength="8" maxlength="20">
@@ -123,7 +123,7 @@ foreach ($users as $user) {
             </form>
         <?php else: ?>
             <p>Email not found.</p>
-            <a href="forgot-password.html">Try again</a>
+            <a href="../../resources/reset.html">Try again</a>
         <?php endif; ?>
     </main>
 </body>
